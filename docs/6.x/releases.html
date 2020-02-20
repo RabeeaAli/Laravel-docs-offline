@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Release Notes - Laravel - The PHP Framework For Web Artisans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../../img/favicon/safari-pinned-tab.svg" color="#ff2d20">
+    <link rel="shortcut icon" href="../../img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ff2d20">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Load fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css">
+
+    <!-- Load styles -->
+    <link rel="stylesheet" type="text/css" href="../../css/app-id=896e44e580b78b25d3c4.css">
+
+    <!-- Load JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+</head>
+<body class="language-php">
+
+    <div class="sidebar_layout" id="docsScreen">
+
+        <div class="page_contain">
+            <div class="contain">
+                <aside class="sidebar">
+                    <a href="../../index.html" class="logo">
+                        <img class="mark" src="../../img/logomark.min.svg" alt="Laravel">
+                        <img class="type" src="../../img/logotype.min.svg" alt="Laravel">
+                    </a>
+                    <nav>
+                        <div class="navigation_contain">
+                            <div class="docs_sidebar">
+                                <ul>
+<li>
+<h2>Prologue</h2>
+<ul>
+<li><a href="releases.html">Release Notes</a></li>
+<li><a href="upgrade.html">Upgrade Guide</a></li>
+<li><a href="contributions.html">Contribution Guide</a></li>
+<li><a href="../../api/6.x/index.html">API Documentation</a></li>
+</ul>
+</li>
+<li>
+<h2>Getting Started</h2>
+<ul>
+<li><a href="installation.html">Installation</a></li>
+<li><a href="configuration.html">Configuration</a></li>
+<li><a href="structure.html">Directory Structure</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+<li><a href="valet.html">Valet</a></li>
+<li><a href="deployment.html">Deployment</a></li>
+</ul>
+</li>
+<li>
+<h2>Architecture Concepts</h2>
+<ul>
+<li><a href="lifecycle.html">Request Lifecycle</a></li>
+<li><a href="container.html">Service Container</a></li>
+<li><a href="providers.html">Service Providers</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+</ul>
+</li>
+<li>
+<h2>The Basics</h2>
+<ul>
+<li><a href="routing.html">Routing</a></li>
+<li><a href="middleware.html">Middleware</a></li>
+<li><a href="csrf.html">CSRF Protection</a></li>
+<li><a href="controllers.html">Controllers</a></li>
+<li><a href="requests.html">Requests</a></li>
+<li><a href="responses.html">Responses</a></li>
+<li><a href="views.html">Views</a></li>
+<li><a href="urls.html">URL Generation</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="validation.html">Validation</a></li>
+<li><a href="errors.html">Error Handling</a></li>
+<li><a href="logging.html">Logging</a></li>
+</ul>
+</li>
+<li>
+<h2>Frontend</h2>
+<ul>
+<li><a href="blade.html">Blade Templates</a></li>
+<li><a href="localization.html">Localization</a></li>
+<li><a href="frontend.html">Frontend Scaffolding</a></li>
+<li><a href="mix.html">Compiling Assets</a></li>
+</ul>
+</li>
+<li>
+<h2>Security</h2>
+<ul>
+<li><a href="authentication.html">Authentication</a></li>
+<li><a href="api-authentication.html">API Authentication</a></li>
+<li><a href="authorization.html">Authorization</a></li>
+<li><a href="verification.html">Email Verification</a></li>
+<li><a href="encryption.html">Encryption</a></li>
+<li><a href="hashing.html">Hashing</a></li>
+<li><a href="passwords.html">Password Reset</a></li>
+</ul>
+</li>
+<li>
+<h2>Digging Deeper</h2>
+<ul>
+<li><a href="artisan.html">Artisan Console</a></li>
+<li><a href="broadcasting.html">Broadcasting</a></li>
+<li><a href="cache.html">Cache</a></li>
+<li><a href="collections.html">Collections</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="filesystem.html">File Storage</a></li>
+<li><a href="helpers.html">Helpers</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="notifications.html">Notifications</a></li>
+<li><a href="packages.html">Package Development</a></li>
+<li><a href="queues.html">Queues</a></li>
+<li><a href="scheduling.html">Task Scheduling</a></li>
+</ul>
+</li>
+<li>
+<h2>Database</h2>
+<ul>
+<li><a href="database.html">Getting Started</a></li>
+<li><a href="queries.html">Query Builder</a></li>
+<li><a href="pagination.html">Pagination</a></li>
+<li><a href="migrations.html">Migrations</a></li>
+<li><a href="seeding.html">Seeding</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>
+<h2>Eloquent ORM</h2>
+<ul>
+<li><a href="eloquent.html">Getting Started</a></li>
+<li><a href="eloquent-relationships.html">Relationships</a></li>
+<li><a href="eloquent-collections.html">Collections</a></li>
+<li><a href="eloquent-mutators.html">Mutators</a></li>
+<li><a href="eloquent-resources.html">API Resources</a></li>
+<li><a href="eloquent-serialization.html">Serialization</a></li>
+</ul>
+</li>
+<li>
+<h2>Testing</h2>
+<ul>
+<li><a href="testing.html">Getting Started</a></li>
+<li><a href="http-tests.html">HTTP Tests</a></li>
+<li><a href="console-tests.html">Console Tests</a></li>
+<li><a href="dusk.html">Browser Tests</a></li>
+<li><a href="database-testing.html">Database</a></li>
+<li><a href="mocking.html">Mocking</a></li>
+</ul>
+</li>
+<li>
+<h2>Official Packages</h2>
+<ul>
+<li><a href="billing.html">Cashier</a></li>
+<li><a href="dusk.html">Dusk</a></li>
+<li><a href="envoy.html">Envoy</a></li>
+<li><a href="horizon.html">Horizon</a></li>
+<li><a href="passport.html">Passport</a></li>
+<li><a href="scout.html">Scout</a></li>
+<li><a href="socialite.html">Socialite</a></li>
+<li><a href="telescope.html">Telescope</a></li>
+</ul>
+</li>
+</ul>
+                            </div>
+
+                            <script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
+
+
+                        </div>
+                    </nav>
+                    <div class="trigger_contain">
+                        <a href="releases.html#" class="nav_trigger" aria-label="Menu">
+                            <div class="bar"></div>
+                        </a>
+                    </div>
+                </aside>
+
+                <section class="body_content">
+                    <header class="docs_actions">
+                        <div class="version_drop">
+                            <div class="input_group">
+                                <label>Version</label>
+                                <div class="custom_select">
+                                    <select id="version_switcher" aria-label="Laravel version">
+                                                                                    <option  value="https://laravel.com/docs/master/releases">Master</option>
+                                                                                    <option selected value="https://laravel.com/docs/6.x/releases">6.x</option>
+                                                                                    <option  value="https://laravel.com/docs/5.8/releases">5.8</option>
+                                                                                    <option  value="https://laravel.com/docs/5.7/releases">5.7</option>
+                                                                                    <option  value="https://laravel.com/docs/5.6/releases">5.6</option>
+                                                                                    <option  value="https://laravel.com/docs/5.5/releases">5.5</option>
+                                                                                    <option  value="https://laravel.com/docs/5.4/releases">5.4</option>
+                                                                                    <option  value="https://laravel.com/docs/5.3/releases">5.3</option>
+                                                                                    <option  value="https://laravel.com/docs/5.2/releases">5.2</option>
+                                                                                    <option  value="https://laravel.com/docs/5.1/releases">5.1</option>
+                                                                                    <option  value="https://laravel.com/docs/5.0/releases">5.0</option>
+                                                                                    <option  value="https://laravel.com/docs/4.2/releases">4.2</option>
+                                                                            </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search_contain">
+                            <div class="input_group search icon">
+                                <input type="text" class="search_input" id="search-docs-input" placeholder="Search Docs" aria-label="Search in the documentation">
+                                <input type="submit" class="search_submit icon_display">
+                            </div>
+                        </div>
+                    </header>
+                    <section class="docs_body">
+                        <section class="docs_main">
+                            <h1>Release Notes</h1>
+<ul>
+<li><a href="releases.html#versioning-scheme">Versioning Scheme</a></li>
+<li><a href="releases.html#support-policy">Support Policy</a></li>
+<li><a href="releases.html#laravel-6">Laravel 6</a></li>
+</ul>
+<p><a name="versioning-scheme"></a></p>
+<h2>Versioning Scheme</h2>
+<p>Laravel and its other first-party packages follow <a href="https://semver.org">Semantic Versioning</a>. Major framework releases are released every six months (February and August), while minor and patch releases may be released as often as every week. Minor and patch releases should <strong>never</strong> contain breaking changes.</p>
+<p>When referencing the Laravel framework or its components from your application or package, you should always use a version constraint such as <code>^6.0</code>, since major releases of Laravel do include breaking changes. However, we strive to always ensure you may update to a new major release in one day or less.</p>
+<p><a name="support-policy"></a></p>
+<h2>Support Policy</h2>
+<p>For LTS releases, such as Laravel 6, bug fixes are provided for 2 years and security fixes are provided for 3 years. These releases provide the longest window of support and maintenance. For general releases, bug fixes are provided for 6 months and security fixes are provided for 1 year. For all additional libraries, including Lumen, only the latest release receives bug fixes. In addition, please review the database versions <a href="database.html#introduction">supported by Laravel</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Release</th>
+<th>Bug Fixes Until</th>
+<th>Security Fixes Until</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.5 (LTS)</td>
+<td>August 30th, 2017</td>
+<td>August 30th, 2019</td>
+<td>August 30th, 2020</td>
+</tr>
+<tr>
+<td>5.6</td>
+<td>February 7th, 2018</td>
+<td>August 7th, 2018</td>
+<td>February 7th, 2019</td>
+</tr>
+<tr>
+<td>5.7</td>
+<td>September 4th, 2018</td>
+<td>March 4th, 2019</td>
+<td>September 4th, 2019</td>
+</tr>
+<tr>
+<td>5.8</td>
+<td>February 26th, 2019</td>
+<td>August 26th, 2019</td>
+<td>February 26th, 2020</td>
+</tr>
+<tr>
+<td>6 (LTS)</td>
+<td>September 3rd, 2019</td>
+<td>September 3rd, 2021</td>
+<td>September 3rd, 2022</td>
+</tr>
+</tbody>
+</table>
+<p><a name="laravel-6"></a></p>
+<h2>Laravel 6</h2>
+<p>Laravel 6 (LTS) continues the improvements made in Laravel 5.8 by introducing semantic versioning, compatibility with <a href="https://vapor.laravel.com">Laravel Vapor</a>, improved authorization responses, job middleware, lazy collections, subquery improvements, the extraction of frontend scaffolding to the <code>laravel/ui</code> Composer package, and a variety of other bug fixes and usability improvements.</p>
+<h3>Semantic Versioning</h3>
+<p>The Laravel framework (<code>laravel/framework</code>) package now follows the <a href="https://semver.org/">semantic versioning</a> standard. This makes the framework consistent with the other first-party Laravel packages which already followed this versioning standard. The Laravel release cycle will remain unchanged.</p>
+<h3>Laravel Vapor Compatibility</h3>
+<p><em>Laravel Vapor was built by <a href="https://github.com/taylorotwell">Taylor Otwell</a></em>.</p>
+<p>Laravel 6 provides compatibility with <a href="https://vapor.laravel.com">Laravel Vapor</a>, an auto-scaling serverless deployment platform for Laravel. Vapor abstracts the complexity of managing Laravel applications on AWS Lambda, as well as interfacing those applications with SQS queues, databases, Redis clusters, networks, CloudFront CDN, and more.</p>
+<h3>Improved Exceptions Via Ignition</h3>
+<p>Laravel 6 ships with <a href="https://github.com/facade/ignition">Ignition</a>, a new open source exception detail page created by Freek Van der Herten and Marcel Pociot. Ignition offers many benefits over previous releases, such as improved Blade error file and line number handling, runnable solutions for common problems, code editing, exception sharing, and an improved UX.</p>
+<h3>Improved Authorization Responses</h3>
+<p><em>Improved authorization responses were implemented by <a href="https://github.com/garygreen">Gary Green</a></em>.</p>
+<p>In previous releases of Laravel, it was difficult to retrieve and expose custom authorization messages to end users. This made it difficult to explain to end-users exactly why a particular request was denied. In Laravel 6, this is now much easier using authorization response messages and the new <code>Gate::inspect</code> method. For example, given the following policy method:</p>
+<pre><code>/**
+ * Determine if the user can view the given flight.
+ *
+ * @param  \App\User  $user
+ * @param  \App\Flight  $flight
+ * @return mixed
+ */
+public function view(User $user, Flight $flight)
+{
+    return $this-&gt;deny('Explanation of denial.');
+}</code></pre>
+<p>The authorization policy's response and message may be easily retrieved using the <code>Gate::inspect</code> method:</p>
+<pre><code>$response = Gate::inspect('view', $flight);
+
+if ($response-&gt;allowed()) {
+    // User is authorized to view the flight...
+}
+
+if ($response-&gt;denied()) {
+    echo $response-&gt;message();
+}</code></pre>
+<p>In addition, these custom messages will automatically be returned to your frontend when using helper methods such as <code>$this-&gt;authorize</code> or <code>Gate::authorize</code> from your routes or controllers.</p>
+<h3>Job Middleware</h3>
+<p><em>Job middleware were implemented by <a href="https://github.com/taylorotwell">Taylor Otwell</a></em>.</p>
+<p>Job middleware allow you to wrap custom logic around the execution of queued jobs, reducing boilerplate in the jobs themselves. For example, in previous releases of Laravel, you may have wrapped the logic of a job's <code>handle</code> method within a rate-limited callback:</p>
+<pre><code>/**
+ * Execute the job.
+ *
+ * @return void
+ */
+public function handle()
+{
+    Redis::throttle('key')-&gt;block(0)-&gt;allow(1)-&gt;every(5)-&gt;then(function () {
+        info('Lock obtained...');
+
+        // Handle job...
+    }, function () {
+        // Could not obtain lock...
+
+        return $this-&gt;release(5);
+    });
+}</code></pre>
+<p>In Laravel 6, this logic may be extracted into a job middleware, allowing you to keep your job's <code>handle</code> method free of any rate limiting responsibilities:</p>
+<pre><code>&lt;?php
+
+namespace App\Jobs\Middleware;
+
+use Illuminate\Support\Facades\Redis;
+
+class RateLimited
+{
+    /**
+     * Process the queued job.
+     *
+     * @param  mixed  $job
+     * @param  callable  $next
+     * @return mixed
+     */
+    public function handle($job, $next)
+    {
+        Redis::throttle('key')
+                -&gt;block(0)-&gt;allow(1)-&gt;every(5)
+                -&gt;then(function () use ($job, $next) {
+                    // Lock obtained...
+
+                    $next($job);
+                }, function () use ($job) {
+                    // Could not obtain lock...
+
+                    $job-&gt;release(5);
+                });
+    }
+}</code></pre>
+<p>After creating middleware, they may be attached to a job by returning them from the job's <code>middleware</code> method:</p>
+<pre><code>use App\Jobs\Middleware\RateLimited;
+
+/**
+ * Get the middleware the job should pass through.
+ *
+ * @return array
+ */
+public function middleware()
+{
+    return [new RateLimited];
+}</code></pre>
+<h3>Lazy Collections</h3>
+<p><em>Lazy collections were implemented by <a href="https://github.com/JosephSilber">Joseph Silber</a></em>.</p>
+<p>Many developers already enjoy Laravel's powerful <a href="collections.html">Collection methods</a>. To supplement the already powerful <code>Collection</code> class, Laravel 6 introduces a <code>LazyCollection</code>, which leverages PHP's <a href="https://www.php.net/manual/en/language.generators.overview.php">generators</a> to allow you to work with very large datasets while keeping memory usage low.</p>
+<p>For example, imagine your application needs to process a multi-gigabyte log file while taking advantage of Laravel's collection methods to parse the logs. Instead of reading the entire file into memory at once, lazy collections may be used to keep only a small part of the file in memory at a given time:</p>
+<pre><code>use App\LogEntry;
+use Illuminate\Support\LazyCollection;
+
+LazyCollection::make(function () {
+    $handle = fopen('log.txt', 'r');
+
+    while (($line = fgets($handle)) !== false) {
+        yield $line;
+    }
+})
+-&gt;chunk(4)
+-&gt;map(function ($lines) {
+    return LogEntry::fromLines($lines);
+})
+-&gt;each(function (LogEntry $logEntry) {
+    // Process the log entry...
+});</code></pre>
+<p>Or, imagine you need to iterate through 10,000 Eloquent models. When using traditional Laravel collections, all 10,000 Eloquent models must be loaded into memory at the same time:</p>
+<pre><code>$users = App\User::all()-&gt;filter(function ($user) {
+    return $user-&gt;id &gt; 500;
+});</code></pre>
+<p>However, beginning in Laravel 6, the query builder's <code>cursor</code> method has been updated to return a <code>LazyCollection</code> instance. This allows you to still only run a single query against the database but also only keep one Eloquent model loaded in memory at a time. In this example, the <code>filter</code> callback is not executed until we actually iterate over each user individually, allowing for a drastic reduction in memory usage:</p>
+<pre><code>$users = App\User::cursor()-&gt;filter(function ($user) {
+    return $user-&gt;id &gt; 500;
+});
+
+foreach ($users as $user) {
+    echo $user-&gt;id;
+}</code></pre>
+<h3>Eloquent Subquery Enhancements</h3>
+<p><em>Eloquent subquery enhancements were implemented by <a href="https://github.com/reinink">Jonathan Reinink</a></em>.</p>
+<p>Laravel 6 introduces several new enhancements and improvements to database subquery support. For example, let's imagine that we have a table of flight <code>destinations</code> and a table of <code>flights</code> to destinations. The <code>flights</code> table contains an <code>arrived_at</code> column which indicates when the flight arrived at the destination.</p>
+<p>Using the new subquery select functionality in Laravel 6, we can select all of the <code>destinations</code> and the name of the flight that most recently arrived at that destination using a single query:</p>
+<pre><code>return Destination::addSelect(['last_flight' =&gt; Flight::select('name')
+    -&gt;whereColumn('destination_id', 'destinations.id')
+    -&gt;orderBy('arrived_at', 'desc')
+    -&gt;limit(1)
+])-&gt;get();</code></pre>
+<p>In addition, we can use new subquery features added to the query builder's <code>orderBy</code> function to sort all destinations based on when the last flight arrived at that destination. Again, this may be done while executing a single query against the database:</p>
+<pre><code>return Destination::orderByDesc(
+    Flight::select('arrived_at')
+        -&gt;whereColumn('destination_id', 'destinations.id')
+        -&gt;orderBy('arrived_at', 'desc')
+        -&gt;limit(1)
+)-&gt;get();</code></pre>
+<h3>Laravel UI</h3>
+<p>The frontend scaffolding typically provided with previous releases of Laravel has been extracted into a <code>laravel/ui</code> Composer package. This allows the first-party UI scaffolding to be developed and versioned separately from the primary framework. As a result of this change, no Bootstrap or Vue code is present in default framework scaffolding, and the <code>make:auth</code> command has been extracted from the framework as well.</p>
+<p>In order to restore the traditional Vue / Bootstrap scaffolding present in previous releases of Laravel, you may install the <code>laravel/ui</code> package and use the <code>ui</code> Artisan command to install the frontend scaffolding:</p>
+<pre><code>composer require laravel/ui --dev
+
+php artisan ui vue --auth</code></pre>
+                        </section>
+                    </section>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+<footer>
+    <div class="footer_contain" style="padding-top: 0;">
+        <div class="contain">
+            <section class="partner_block">
+                <div class="content">
+                    <h2>Become a Laravel Partner</h2>
+                    <p>Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project.</p>
+                </div>
+                                <a href="../../partners.html" class="btn"><span>Our Partners</span></a>
+                            </section>
+        </div>
+
+        <div class="footer_bg">
+            <div class="contain">
+                <div class="footer_content">
+                    <div class="logotype">
+                        <img src="../../img/logotype.min.svg" alt="Laravel">
+                    </div>
+                    <div class="search_box">
+
+                    </div>
+                </div>
+                <div class="footer_content">
+                    <div class="footer_nav">
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Highlights</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="releases.html">Release Notes</a></li>
+                                    <li><a href="installation.html">Getting Started</a></li>
+                                    <li><a href="routing.html">Routing</a></li>
+                                    <li><a href="blade.html">Blade Templates</a></li>
+                                    <li><a href="authentication.html">Authentication</a></li>
+                                    <li><a href="authorization.html">Authorization</a></li>
+                                    <li><a href="artisan.html">Artisan Console</a></li>
+                                    <li><a href="database.html">Database</a></li>
+                                    <li><a href="eloquent.html">Eloquent ORM</a></li>
+                                    <li><a href="testing.html">Testing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Resources</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="https://laracasts.com">Laracasts</a></li>
+                                    <li><a href="https://laravel-news.com">Laravel News</a></li>
+                                    <li><a href="https://laracon.us">Laracon</a></li>
+                                    <li><a href="https://laracon.eu/">Laracon EU</a></li>
+                                    <li><a href="https://laracon.com.au/">Laracon AU</a></li>
+                                    <li><a href="https://larajobs.com">Jobs</a></li>
+                                    <li><a href="https://certification.laravel.com/">Certification</a></li>
+                                    <li><a href="https://laracasts.com/discuss">Forums</a></li>
+                                    <!-- <li><a href="http://www.laravelpodcast.com/">Podcast</a></li> -->
+                                    <!-- <li><a href="https://course.testdrivenlaravel.com/">Test-driven Laravel</a></li> -->
+                                    <!-- <li><a href="https://statamic.com/">Statamic</a></li> -->
+<!--                                     <li><a href="https://styleci.io/">StyleCI</a></li>
+                                    <li><a href="https://cachethq.io/">Cachet</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Partners</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="https://vehikl.com">Vehikl</a></li>
+                                    <li><a href="https://tighten.co">Tighten Co.</a></li>
+                                    <li><a href="https://kirschbaumdevelopment.com/">Kirschbaum</a></li>
+                                    <li><a href="https://www.byte5.net/">Byte 5</a></li>
+                                    <li><a href="https://64robots.com/">64Robots</a></li>
+                                    <li><a href="https://cubettech.com/">Cubet</a></li>
+                                    <li><a href="https://devsquad.com/">DevSquad</a></li>
+                                    <li><a href="https://www.ideil.com/">Ideil</a></li>
+                                    <li><a href="https://www.cyber-duck.co.uk/how-we-work/technology/laravel?utm_source=Laravel%20Partner&utm_medium=Sponsorship">Cyber-Duck</a></li>
+                                    <li><a href="https://corporate.aboutyou.de/app/uploads/2019/08/INTRO-Pitch-I-AY-Tech.pdf?utm_source=laravelpartnersfindoutmore&utm_medium=socialgroups&utm_campaign=tech">ABOUT YOU</a></li>
+                                    <li><a href="https://www.a2design.biz/">A2 Design</a></li>
+                                    <li><a href="https://romegadigital.com/">Romega Software</a></li>
+                                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeOTE1G6zxSPbKdmQ59UKkL_Rja_ddAyG6Y6xxGdSGAWlNTFA/viewform">Become A Partner</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Ecosystem</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="https://vapor.laravel.com">Vapor</a></li>
+                                    <li><a href="https://forge.laravel.com">Forge</a></li>
+                                    <li><a href="https://envoyer.io">Envoyer</a></li>
+                                    <li><a href="horizon.html">Horizon</a></li>
+                                    <li><a href="https://lumen.laravel.com">Lumen</a></li>
+                                    <li><a href="https://nova.laravel.com">Nova</a></li>
+                                    <li><a href="broadcasting.html">Echo</a></li>
+                                    <li><a href="valet.html">Valet</a></li>
+                                    <li><a href="mix.html">Mix</a></li>
+                                    <li><a href="https://spark.laravel.com">Spark</a></li>
+                                    <li><a href="billing.html">Cashier</a></li>
+                                    <li><a href="homestead.html">Homestead</a></li>
+                                    <li><a href="dusk.html">Dusk</a></li>
+                                    <li><a href="passport.html">Passport</a></li>
+                                    <li><a href="scout.html">Scout</a></li>
+                                    <li><a href="socialite.html">Socialite</a></li>
+                                    <li><a href="telescope.html">Telescope</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_info">
+                        <p class="small">Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in most web projects.</p>
+                        <p class="small copyright">Laravel is a Trademark of Taylor Otwell.<br>Copyright &copy; 2011-2020 Laravel LLC.
+                        </p>
+                        <ul class="social_links">
+                            <li><a href="https://twitter.com/laravelphp"><img src="../../img/social/twitter.min.svg" alt="Twitter"></a>
+                            </li>
+                            <li><a href="https://github.com/laravel"><img src="../../img/social/github.min.svg" alt="GitHub"></a>
+                            </li>
+                            <li><a href="https://discord.gg/mPZNm7A"><img src="../../img/social/discord.min.svg" alt="Discord"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="../../index.html" class="logomark"><img src="../../img/logomark.min.svg" alt="Laravel"></a>
+    </div>
+</footer>
+
+<script>
+    var algolia_app_id = '8BB87I11DE';
+    var algolia_search_key = '60b61cc4ab41ce7967bd36b002e9ea74';
+    var version = '6.x';
+</script>
+
+<script id="search_suggestion_template" type="text/template">
+	<div class="autocomplete-wrapper">
+		{{#_highlightResult.h1}}
+		<div class="h1">
+			{{{ _highlightResult.h1.value }}}
+		</div>
+		{{/_highlightResult.h1}}
+
+		<div class="sub-section">
+			{{#_highlightResult.h2}}
+			<div class="h2">
+				<span class="hash">#</span> {{{ _highlightResult.h2.value }}}
+			</div>
+			{{/_highlightResult.h2}}
+
+			{{#_highlightResult.h3}}
+			<div class="h3">
+				> {{{ _highlightResult.h3.value }}}
+			</div>
+			{{/_highlightResult.h3}}
+
+			{{#_highlightResult.h4}}
+			<div class="h4">
+				> {{{ _highlightResult.h4.value }}}
+			</div>
+			{{/_highlightResult.h4}}
+		</div>
+
+		{{#_highlightResult.content}}
+		<div class="content">
+			{{{ _highlightResult.content.value }}}
+		</div>
+		{{/_highlightResult.content}}
+	</div>
+</script>
+
+<script id="search_empty_template" type="text/template">
+	<div class="autocomplete-wrapper empty">
+		<div class="h2">We didn't find any result for "{{query}}". Sorry!</div>
+	</div>
+</script>
+
+<script id="search_footer_template" type="text/template">
+	<div class="footer">
+		<a target="_blank" href="https://www.algolia.com/?utm_source=laravel&utm_medium=link&utm_campaign=laravel_documentation_search">
+            <img width="105" src="/img/icons/algolia.min.svg" alt="Algolia">
+			<div style="clear: both"></div>
+		</a>
+	</div>
+</script>
+
+<script src="../../js/app-id=7c41401763724f094596.js"></script>
+
+<script>
+    var _gaq=[['_setAccount','UA-23865777-1'],['_trackPageview']];
+    (function(d,t){
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)
+    }(document,'script'));
+</script>
+</body>
+</html>
